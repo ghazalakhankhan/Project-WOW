@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="custom.js"></script>
+   
+
+</head>
+<body>
+    <body style="background-color:white;">
+
+        <div class="navbar">
+          <div class="icon">
+            <img class="icon-size" src="./logo/WhatsApp Image 2024-01-01 at 19.43.38_2e754924.jpg" alt="">
+          </div>
+          <div class="heading">
+            <h1>WONDERS OF WORLD</h1>
+          </div>
+      
+      
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">HISTORY
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="petra.html">PETRA</a>
+                  <a href="china.html">GREAT WALL OF CHINA</a>
+                  <a href="col.html">THE COLOSSEUM</a>
+                  <a href="taj.html">TAJ MAHAL</a>
+                  <a href="machu.html">MACHU PICCHU</a>
+                  <a href="chichen.html">CHICHEN ITZA</a>
+                  <a href="christ.html">CHRIST OF REDEEMER</a>
+      
+      
+            </div>
+            <a href="index.html">HOME</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="about-us.html">ABOUT-US</a>
+            <a href="contact.html">CONTACT-US</a>
+            <a href="queries.html">QUERIES</a>
+          </div>
+        </div>
+        <br>
+      
+      
+        <div class="slideshow-container">
+          <div id="mySidenav" class="sidenav">
+            <a href="feedback.html" id="about">FEED-BACK</a>
+            </div>
+            </div>
+
+
+            <div class="ad-div">
+                <div class="ad">
+                    <!-- <div class="container1"> -->
+                        <div class="box1">
+                            <img src="./hist/fly.avif" alt="">
+                        </div>
+                        <div class="box2">
+                            <img src="./hist/flight_booking_travel_ad_gen_ai_l.jpg" alt="">
+                        </div>
+                    </div>
+                    <div id="feed">
+                        <div class="feedback-form">
+                            <h2>Feedback Form</h2>
+                            <form id="feedbackForm">
+                                <label for="name">Your Name:</label>
+                                <input type="text" id="name" name="name" required>
+                                
+                                <label for="role">Your Role:</label>
+                                <input type="text" id="role" name="role" required>
+                                
+                                <label for="satisfaction">Overall Satisfaction:</label>
+                                <select id="satisfaction" name="satisfaction" required>
+                                    <option value="very-satisfied">Very Satisfied</option>
+                                    <option value="satisfied">Satisfied</option>
+                                    <option value="neutral">Neutral</option>
+                                    <option value="dissatisfied">Dissatisfied</option>
+                                    <option value="very-dissatisfied">Very Dissatisfied</option>
+                                </select>
+                                
+                                <label for="comments">Comments:</label>
+                                <textarea id="comments" name="comments" rows="4" required></textarea>
+                                
+                                <button class="btn" type="button" onclick="submitFeedback()">Submit Feedback</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="pc">
+                      <img src="./hist/download.jpeg" alt="">
+                    </div>
+                    <!-- </div> -->
+                </div>
+                <button class="btn1" type="button" onclick="myFunction()">TOGGLE ME</button>
+
+
+                <br>
+                  <footer>
+                  <div class="footercontainer">
+                      <div class="socialicons">
+                          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                          <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                          <a href="#"><i class="fa-brands fa-youtube"></i></a>   
+                  </div>
+                  <div class="footerNav">
+                      <ul>
+                          <li><a href="">Home</a></li>
+                          <li><a href="">News</a></li>
+                          <li><a href="">About</a></li>
+                          <li><a href="">Contact Us</a></li>
+                          <li><a href="">Our Team</a></li>
+                      </ul>
+                  </div>
+                  
+                      </div>
+                      <div class="footerBottom">
+                          <p>Copyright &copy;2024; Designed by <span class="designer">Sameer <br> Ume-Hani <br> Ghazala</span></p>
+                      </div>
+              </footer>
+                                
+                        
+                        
+                        
+                        
+            <script>
+                function submitFeedback() {
+                    // You can add form validation here before proceeding
+                    // For simplicity, I'm just displaying an alert
+                    alert("Feedback submitted successfully!");
+                    document.getElementById("feedbackForm").toggle(); // Clear the form
+                }
+                // function toggle(){
+                //     document.getElementsByClassName("btn1").toggle();
+                // };
+
+                
+    
+                
+                function myFunction() {
+      var x = document.getElementById("feed");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+            </script>        
+    
+    
+</body>
+</html>

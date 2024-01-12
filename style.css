@@ -1,0 +1,782 @@
+
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  /* border: 1px solid black; */
+  /* box-shadow:  10px 10px 5px  rgb(204, 219, 232); */
+  z-index: 100;
+  /* position: absolute; */
+  height: 100px;
+  width: 100%;
+  box-shadow: 0 15px 45px rgba(0,0,0,.1);
+  /* position: fixed; */
+
+
+
+
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: limegreen;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.icon img {
+  height: 100px;
+  width: 150px;
+
+}
+
+.heading {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: darkblue;
+  margin-left: 20px;
+
+  margin-top: 20px;
+
+}
+
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+  /* margin-left: 800px; */
+  margin-left: 250px;
+  margin-top: 35px;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: limegreen;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin: 0;
+
+  
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn,
+.dropbtn:focus {
+  color: darkblue;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  /* position: static; */
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.slideshow-container {
+    /* max-width: 100%; */
+    /* position: relative; */
+    margin: auto;
+  
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    margin-top: 13px;
+    height: 600px;
+    width: 100%;
+    /* position: relative; */
+    /* border: 2px solid black; */
+  }
+  .mySlides img{
+    height: 600px;
+    width: 100%;
+    /* opacity: 93%; */
+    /* filter: blur(70%); */
+    /* filter: grayscale(30%); */
+  }
+  #mySidenav a {
+    position: fixed; /* Position them relative to the browser window */
+    /* left: -80px; */
+    right: -100px;
+    z-index: 100;
+    text-align: right;
+    font-family: 'poppins',sans-serif;
+    font-weight: bold;
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 150px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 14px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 5px 0px 0px 5px; /* Rounded corners on the top right and bottom right side */
+  }
+  
+  #mySidenav a:hover {
+    /* left: 0; */
+    right: 0;
+  }
+  
+  /* The about link: 20px from the top with a green background */
+  #about {
+    /* top: 20px; */
+    background-color: limegreen;
+  }
+  .mySlides h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 3px;
+    color: #252525;
+    /* margin-top: 500px; */
+  }
+  .mySlides p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.3);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 6px;
+    width: 100%;
+    text-align: center;
+  }
+  .text h2{
+    color: black;
+    
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .hi h1 span{
+    color: limegreen;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+
+  }
+  .hi h1{
+    color: darkblue;
+    font-family: sans-serif;
+    font-size: 40px;
+    /* text-decoration-line: underline;color: limegreen; */
+
+  }
+  *{
+    box-sizing: border-box;
+  
+  }
+  .contner{
+    display: flex;
+    width: 1100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 200px;
+  }
+  .contner .box{
+    width: 320px;
+    position: relative;
+    background: #fff;
+    padding: 100px 40px 60px;
+    box-shadow: 0 15px 45px rgba(0,0,0,.2);
+    /* border: 1px solid darkblue; */
+    border-radius: 15px 15px 15px 15px ;
+  }
+  .contner .box:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: limegreen;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+    border-radius: 15px 15px 15px 15px;
+
+  }
+  .contner .box:hover:before{
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+
+  }
+  .contner .box h2{
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    font-size: 4em;
+    font-weight: 800;
+    z-index: 1;
+    opacity: 0.1;
+    transition: 0.5s;
+  
+
+  }
+  .contner .box:hover h2{
+    opacity: 1;
+    color: #fff;
+    transform: translateY(-40px);
+  }
+  .contner .box h3{
+    position: relative;
+    font-size: 1.5em;
+    z-index: 2;
+    color: limegreen;
+    transition: 0.5s;
+
+  }
+  .contner .box p{
+    position: relative;
+    font-size: 1.5em;
+    z-index: 2;
+    color: darkblue;
+    transition: 0.5s;
+    text-align: center;
+
+  }
+  .contner .box:hover h3{
+    color: darkblue;
+  }
+  .contner .box:hover p{
+    color: #fff;
+
+  }
+  .cont{
+    margin-left: 270px;
+    /* border: 2px solid darkblue; */
+  }
+  .contact-form{
+    position: relative;
+    min-height:100vh;
+    z-index: 0;
+    /* background:sandybrown; */
+    /* background: beige; */
+    padding: 30px;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    align-items: center;  
+    margin-top: 5px;  
+}
+.container{
+    max-width: 700px;
+    margin-top: 0 auto;
+    /* border: 1px solid black; */
+}
+
+.contact-form h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    /* color: #fff; */
+    color: #252525;
+    font-family: 'poppins';
+}
+.contact-form h2{
+    line-height: 40px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: sans-serif;
+    /* color: sandybrown; */
+    color: limegreen;
+    /* border: #252525; */
+    text-align: center;
+}
+.contact-form .main{
+    position: relative;
+    display: flex;
+    margin: 30px 0;
+}
+.content{
+    flex-basis: 50%;/*the initial size of a flex item in a flex container.*/ 
+    padding: 3em 3em;/* simply use that top and bottam padding is 3em same as left and right is 3em*/
+    /* background: #fff; */
+    background: darkblue;
+    /* box-shadow: 2px 9px 49px -17 rgba(0,0,0,0.2);*/
+    box-shadow: 0 15px 45px rgba(0,0,0,.3);
+     
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+/* .content input{
+    border: 1px solid black;
+} */
+.form-img{
+    flex-basis: 50%;
+    background:limegreen;
+    background-size: cover;
+    padding: 40px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    align-items: center;
+    display: grid;
+    box-shadow: 0 15px 45px rgba(0,0,0,.3);
+
+}
+.form-img img{
+    max-width: 100%;
+}
+.btn,button,input{
+    border-radius: 35px;
+}
+.btn:hover,button:hover{
+    /* color:gold; */
+    color:  #fff;
+    transition: 0.5s ease;
+}
+.contact-form form{
+    margin: 30px 0;
+}
+.contact-form input,textarea{
+    outline: none;
+    margin-bottom: 15px;
+    font-stretch: 16px;
+    color: black;
+    padding: 14px 20px;
+    width: 100%;
+    display: inline-block;
+    box-sizing:border-box;
+    border:none;
+    /* border: 1px solid black; */
+    background: #fcfcfc;
+    transition: 0.3s ease;
+}
+.contact-form input:focus{
+    /* background: transparent; */
+    background: #fff;
+    border: 1px solid limegreen;
+}
+.btn{
+    padding:15px;
+    margin: 2px;
+}
+.contact-form button{
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    /* background: sandybrown; */
+    background: limegreen;
+    font-weight: 600;
+    transition: 0.3s ease;
+    padding: 14px 15px;
+    border: 2px solid beige;
+}
+@media(max-width:736px){
+    .contact-form.main{
+        flex-direction: column;
+    }
+
+.contact-form form{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.form-img{
+    border-radius: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    order:2;/*order property is used in Flexbox and Grid layouts to define the order in which a flex item or grid item appears within its container. */
+} 
+.content{
+    order: 1;
+    border-top-left-radius: 8px;
+    border-top-right-radius:8px;
+}
+
+
+}
+
+.conainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* vh means 100% view height */
+  height: 100vh;
+  margin-top: 5px;
+
+
+}
+
+.panel{
+  width: 50px;
+  height: 80vh;
+  box-shadow: 0 0 10px black;
+  margin: 20px;
+  border-radius: 20px;
+  flex: 1;
+  /* background: white no-repeat scroll center;    */
+  transition: all 0.5s linear;
+  /* property call filter scale:  */
+  filter: grayscale(30%);
+  position: relative;
+
+}
+.panel h3{
+  position: absolute;
+  left: 0;
+  bottom: 100px;
+  color: white;
+  font-size: 40px;
+  transform: rotate(-90deg);
+  transition: all 0.5s linear
+}
+.active{
+  flex: 7;
+  filter: grayscale(0);
+}
+.active h3{
+  transform: rotate(0deg);
+  left: 50px;
+  top: 50px;
+  text-shadow: 0 0 3px black;
+}
+
+#panel-1{ background-image: url(caar/chr.jpg);
+background-repeat:no-repeat; background-size: cover;}
+
+#panel-2{ background-image: url(caar/c.jpg);
+  background-repeat: no-repeat; background-size: cover}
+
+#panel-3{ background-image: url(caar/pru2.jpg);
+  background-repeat: no-repeat; background-size: cover}
+
+#panel-4{ background-image: url(caar/itza.jpg);
+  background-repeat: no-repeat; background-size: cover}
+
+#panel-5{ background-image: url(caar/petra.jpg);
+  background-repeat: no-repeat; background-size: cover}
+
+#panel-6{ background-image: url(caar/6335cc9428afc3f34596a2c72934dc9a.jpg);
+  background-repeat: no-repeat; background-size: cover}
+
+#panel-7{ background-image: url(caar/taj.jpg);
+background-repeat: no-repeat; background-size: cover;} 
+
+.about{
+  display: inline-block;
+  margin: 10%;
+  margin-top: 5%;
+  padding: 10px 20px;
+}
+.about .details{
+  float: left;
+  display: table;
+  padding: 15px 40px;
+  font-size: 15px;
+  height: 650px;
+  width: 40%;
+  letter-spacing: 3px;
+  background-color: #fff;
+  box-shadow: 4px 4px 20px black;
+  margin-left: 90px;
+  border-radius: 15px 15px 15px 15px;
+}
+.details h1{
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 20%;
+  color: darkblue;
+}
+.details h1 span{
+  font-size: 60px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 20%;
+  color: limegreen;
+  /* margin-right: 100px; */
+
+}
+.details p{
+  margin: 20px;
+  letter-spacing: 2px;
+  color: black;
+}
+.details .icons{
+  font-weight: bold;
+  margin: 20px;
+  cursor: pointer;
+  margin-top: 20%;
+color: limegreen;
+}
+  .details .icons:hover{
+    opacity: 0.7;
+    color: darkblue;
+  }
+
+
+.details h3{
+margin: 20px;
+color: darkblue;
+}
+.details h2{
+font-family: sans-serif;
+/* font-size: 20px; */
+  color: limegreen;
+}
+.details h2 span{
+  color: darkblue;
+  font-family: sans-serif;
+  font-weight: bold;
+  /* font-size: ; */
+}
+
+.about .pico{
+  float: right;
+  width: 48%;
+  height: 650px;
+  background-color: limegreen;
+  box-shadow: 4px 4px 20px black;
+  border-radius: 15px 15px 15px 15px;
+  margin-right: 44px;
+}
+.pico img{
+  border: 3px solid darkblue;
+  margin-left: -50px;
+  margin-top: 15%;
+  height: 500px;
+  width:500px ;
+  box-shadow: 3px 3px 20px black;
+
+}
+/* .pic{ */
+  /* border: 5px solid black; */
+  /* position: fixed; */
+
+.pic-style{
+  background-image: url(images/The_Monastery\,_Petra\,_Jordan8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+}
+/* .pic-mon{
+  text-align: center;
+  color: #fff;
+  position: relative;
+
+} */
+  /* margin-top: 200px;border: 2px solid red; */
+.pic-mon h2{
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 70px;
+  /* margin-top: 150px; */
+  
+}
+.hist{
+  height: 2500px;
+  width: 80%;
+  margin-left: 150px;
+
+}
+.mean h1 {
+    margin: 10px;
+    font-family: 'poppins',sans-serif;
+    font-weight: bold;
+    color: limegreen;
+}
+.mean h2 {
+  font-family: 'poppins', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 5px;
+  color: darkblue;
+}
+.mean p{
+  font-family: 'poppins', sans-serif;
+  font-size: medium;
+  text-align: justify;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 20px;
+  color: black;
+}
+hr{
+  /* height: 4px; */
+  width: 320px;
+  color:darkblue;
+  /* border-width: 1px; */
+}
+
+footer{
+  background-color: white;
+  /* box-shadow: 2px 2px 7px black; */
+  box-shadow:  8px 8px 40px  rgb(204, 219, 232);
+
+}
+.footercontainer{
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+.socialicons{
+display: flex;
+justify-content: center;  
+  
+}
+.socialicons a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: limegreen;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialicons a i{
+  font-size: 2em;
+  color: white;
+  opacity: 0.9;
+}
+
+/* Hover Effects On Social Media Icons */
+.socialicons a :hover{
+  /* background-color: darkblue; */
+  transition: 0.5s;
+}
+.socialicons a:hover i{
+  color: darkblue;
+  transition: 0.5s;
+}
+.footerNav {
+  margin: 30px 0;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a{
+color: darkblue;
+margin: 20px;
+text-decoration: none;
+font-size: 1.3em;
+opacity: 0.8;
+transition: 0.5s; 
+font-family: 'poppins',sans-serif;
+font-weight: bold;
+}
+.footerNav ul li a:hover{
+  opacity: 1;
+  color: limegreen;
+
+}  
+.footerBottom {
+  background-color: limegreen;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p{
+  color: white;
+}
+.designer{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+@media (max-width: 700px){
+  .footerNav ul{
+      flex-direction: column;
+  } 
+  .footerNav ul li{
+      width: 100%;
+      text-align: center;
+      margin: 10px;
+  } 
+
+}
+
+
+
+
